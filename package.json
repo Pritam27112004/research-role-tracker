@@ -1,0 +1,20 @@
+{
+  "name": "intern_search",
+  "version": "1.0.0",
+  "description": "internship-tracker/\r │\r ├── backend/\r │   ├── server.js              # Express app entry point\r │   ├── db.js                  # MongoDB connection\r │   ├── companies.js           # Predefined career pages\r │   │\r │   ├── scrapers/              # All scraping logic\r │   │   ├── index.js           # Main scraper router\r │   │   ├── genericScraper.js  # Generic Playwright scraper\r │   │   ├── leverScraper.js    # Lever.co specific scraper (future)\r │   │   └── greenhouseScraper.js # Greenhouse specific scraper (future)\r │   │\r │   ├── models/\r │   │   └── Internship.js      # Mongoose schema\r │   │\r │   ├── routes/\r │   │   ├── scrapeRoutes.js    # /api/scrape-all\r │   │   └── internshipRoutes.js # /api/internships\r │   │\r │   └── utils/\r │       └── logger.js          # (future) logging helper\r │\r ├── frontend/\r │   ├── index.html             # Main UI\r │   ├── css/\r │   │   └── style.css\r │   └── js/\r │       └── script.js\r │\r ├── .env                       # Mongo URI, secrets\r ├── package.json\r ├── package-lock.json\r └── README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5",
+    "playwright": "^1.58.1"
+  }
+}
